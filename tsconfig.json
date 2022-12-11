@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      "@application/*": [
+        "src/application/*"
+      ],
+      "@infrastructure/*": [
+        "src/infrastructure/*"
+      ],
+      "@presentation/*": [
+        "src/presentation/*"
+      ]
+    },
+    "target": "ESNext",
+    "experimentalDecorators": true,
+    "outDir": "dist",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "alwaysStrict": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
